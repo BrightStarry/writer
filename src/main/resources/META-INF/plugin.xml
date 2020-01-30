@@ -1,0 +1,25 @@
+<idea-plugin>
+    <id>com.zx.plugin</id>
+    <name>writer</name>
+    <vendor email="970389745@qq.com" url="https://github.com/BrightStarry">zx</vendor>
+
+    <description><![CDATA[
+    <h2>码字插件</h2>
+    ]]></description>
+
+    <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/plugin_compatibility.html
+         on how to target different products -->
+    <depends>com.intellij.modules.platform</depends>
+
+    <extensions defaultExtensionNs="com.intellij">
+        <!-- Add your extensions here -->
+    </extensions>
+
+    <actions>
+        <!-- Add your actions here -->
+        <action class="com.zx.plugin.writer.TestApplication" text="TestPlugin">
+            <add-to-group group-id="WindowMenu" anchor="first"/>
+        </action>
+
+    </actions>
+</idea-plugin>
